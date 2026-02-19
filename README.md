@@ -15,8 +15,8 @@ Engineering mindset skills for Claude Code. These skills activate different prof
 | **brevity-engineer** | Implementation | Ensure minimal, spec-aligned code |
 | **linting-engineer** | Implementation | Run linters, enforce type consistency |
 | **test-writer** | Implementation | Write fast, meaningful tests |
-| **scaffold-engineer** | Setup | Initialize projects with proper tooling |
 | **documentation-engineer** | Implementation | Maintain CLAUDE.md and docs |
+| **scaffold-engineer** | Setup | Initialize projects with proper tooling |
 
 ## Installation
 
@@ -110,6 +110,7 @@ Apply venture-capitalist: I want to build a new SaaS for...
 
 Each skill has a clear domain and explicitly defers to other skills:
 
+Idea & Design:
 ```
 venture-capitalist → "Should this exist?" (market, competition)
         ↓
@@ -118,7 +119,9 @@ product-manager → "What exactly should it do?" (scope, requirements)
 skeptic-engineer → "Will this approach work?" (architecture, risks)
         ↓
 test-engineer → "What scenarios must we handle?" (edge cases)
-        ↓
+
+Implementation:
+```
 framework-engineer → "Which libraries should we use?" (dependencies)
         ↓
 brevity-engineer → "Is this code minimal?" (scope in code)
@@ -131,5 +134,4 @@ documentation-engineer → "Is this documented?" (CLAUDE.md, docs)
 ```
 
 ## License
-
-MIT
+[Apache License 2.0](./LICENSE)
