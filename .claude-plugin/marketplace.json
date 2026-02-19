@@ -1,0 +1,75 @@
+{
+  "name": "clawdskillz",
+  "owner": {
+    "name": "Orens Xhagolli",
+    "email": "oxhagolli@gmail.com"
+  },
+  "metadata": {
+    "description": "Engineering mindset skills for Claude - skeptical engineers, pragmatic PMs, and rigorous thinkers",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "thinking-skills",
+      "description": "Meta-cognitive skills for rigorous reasoning and self-correction",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/self-doubt"
+      ]
+    },
+    {
+      "name": "planning-skills",
+      "description": "Skills for planning phase: business validation, requirements, architecture review, and edge case discovery",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/venture-capitalist",
+        "./skills/product-manager",
+        "./skills/skeptic-engineer",
+        "./skills/test-engineer"
+      ]
+    },
+    {
+      "name": "implementation-skills",
+      "description": "Skills for implementation phase: library research, code minimalism, linting, test writing, and documentation",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/framework-engineer",
+        "./skills/brevity-engineer",
+        "./skills/linting-engineer",
+        "./skills/test-writer",
+        "./skills/documentation-engineer"
+      ]
+    },
+    {
+      "name": "setup-skills",
+      "description": "Skills for project initialization and scaffolding",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/scaffold-engineer"
+      ]
+    },
+    {
+      "name": "all-skills",
+      "description": "All clawdskillz engineering mindset skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/self-doubt",
+        "./skills/venture-capitalist",
+        "./skills/product-manager",
+        "./skills/skeptic-engineer",
+        "./skills/test-engineer",
+        "./skills/framework-engineer",
+        "./skills/brevity-engineer",
+        "./skills/linting-engineer",
+        "./skills/scaffold-engineer",
+        "./skills/test-writer",
+        "./skills/documentation-engineer"
+      ]
+    }
+  ]
+}
