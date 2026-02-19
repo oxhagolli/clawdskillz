@@ -119,6 +119,7 @@ product-manager → "What exactly should it do?" (scope, requirements)
 skeptic-engineer → "Will this approach work?" (architecture, risks)
         ↓
 test-engineer → "What scenarios must we handle?" (edge cases)
+```
 
 Implementation:
 ```
