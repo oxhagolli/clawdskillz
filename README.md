@@ -11,6 +11,7 @@ Engineering mindset skills for Claude Code. These skills activate different prof
 | **product-manager** | Planning | Scope features, clarify requirements |
 | **skeptic-engineer** | Planning | Poke holes in technical approaches |
 | **test-engineer** | Planning | Surface edge cases and scenarios |
+| **parallel-orchestrator** | Plan→Impl | Break work into parallel subagent streams |
 | **framework-engineer** | Implementation | Research libraries, find deprecations |
 | **brevity-engineer** | Implementation | Ensure minimal, spec-aligned code |
 | **linting-engineer** | Implementation | Run linters, enforce type consistency |
@@ -80,6 +81,7 @@ cat clawdskillz/skills/skeptic-engineer/SKILL.md >> CLAUDE.md
 - `product-manager` - Requirements, scope control, clarity
 - `skeptic-engineer` - Technical approach critique, architecture risks
 - `test-engineer` - Edge cases, scenarios to handle during planning
+- `parallel-orchestrator` - Break approved plans into parallel subagent work streams
 
 ### implementation-skills
 - `framework-engineer` - Library selection, deprecation checks, best practices
@@ -121,7 +123,19 @@ skeptic-engineer → "Will this approach work?" (architecture, risks)
 test-engineer → "What scenarios must we handle?" (edge cases)
 ```
 
-Implementation:
+Plan to Implementation:
+```
+parallel-orchestrator → "How do we parallelize this?" (subagent coordination)
+        ↓
+   ┌────┴────┐
+   ▼         ▼
+[Subagent] [Subagent]  → Each runs implementation skills
+   └────┬────┘
+        ▼
+   Integration
+```
+
+Implementation (per subagent):
 ```
 framework-engineer → "Which libraries should we use?" (dependencies)
         ↓
